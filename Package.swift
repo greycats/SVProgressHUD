@@ -11,6 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "SVProgressHUD",
+            type: .static,
             targets: ["SVProgressHUD"]
         )
     ],
@@ -23,8 +24,7 @@ let package = Package(
             resources: [
                 .copy("SVProgressHUD.bundle"),
                 .copy("PrivacyInfo.xcprivacy")
-            ],
-            publicHeadersPath: "include"
+            ]
         )
     ]
 )
