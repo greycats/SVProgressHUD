@@ -24,7 +24,8 @@ let package = Package(
             resources: [
                 .copy("SVProgressHUD.bundle"),
                 .copy("PrivacyInfo.xcprivacy")
-            ]
+            ],
+            publicHeadersPath: "include"
         )
     ]
 )
